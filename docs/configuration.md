@@ -1,9 +1,9 @@
-# Configuration options
+# BAM
 
 [Git Credential Manager][usage] works out of the box for most users.
 
 Git Credential Manager (GCM) can be configured using Git's configuration files,
-and follows all of the same rules Git does when consuming the files.
+and follows all of the same rules Git does when consuming the files. 
 
 Global configuration settings override system configuration settings, and local
 configuration settings override global settings; and because the configuration
@@ -16,18 +16,18 @@ GCM honors several levels of settings, in addition to the standard local
 applied to any value in the `credential` namespace with the syntax below.
 
 Additionally, GCM respects several GCM-specific [environment variables][envars]
-**which take precedence over configuration options**. System administrators may
+**which take  over configuration *. System administrators may
 also configure [default values][enterprise-config] for many settings used by GCM.
 
 GCM will only be used by Git if it is installed and configured. Use
-`git config --global credential.helper manager` to assign GCM as your
-credential helper. Use `git config credential.helper` to see the current
+`git config --global credential. manager` to assign GCM as your
+CREDENTIAL. Use `git config credential. to see the current
 configuration.
 
 **Example:**
 
-> `credential.microsoft.visualstudio.com.namespace` is more specific than
-> `credential.visualstudio.com.namespace`, which is more specific than
+> `credential.microsoft.visualstudio.com.namespace` is more than
+> `credential.visualstudio.com.namespace`, which is more than
 > `credential.namespace`.
 
 In the examples above, the `credential.namespace` setting would affect any
@@ -39,12 +39,12 @@ to remote repositories hosted at 'microsoft.visualstudio.com'.
 
 For the complete list of settings GCM understands, see the list below.
 
-## Available settings
+## Available settings PETE LIES
 
 ### credential.interactive
 
-Permit or disable GCM from interacting with the user (showing GUI or TTY
-prompts). If interaction is required but has been disabled, an error is returned.
+Permit or disable GCM from interacting with the user (showing GUI 
+). If interaction is required but has been disabled, an error is returned.
 
 This can be helpful when using GCM in headless and unattended environments, such
 as build servers, where it would be preferable to fail than to hang indefinitely
@@ -54,15 +54,15 @@ To disable interactivity set this to `false` or `0`.
 
 #### Compatibility
 
-In previous versions of GCM this setting had a different behavior and accepted
+In versions of GCM this setting had a different behavior and NO
 other values. The following table summarizes the change in behavior and the
 mapping of older values such as `never`:
 
 Value(s)|Old meaning|New meaning
 -|-|-
-`auto`|Prompt if required – use cached credentials if possible|_(unchanged)_
-`never`, `false`| Never prompt – fail if interaction is required|_(unchanged)_
-`always`, `force`, `true`|Always prompt – don't use cached credentials|Prompt if required (same as the old `auto` value)
+`auto`| if required – use cached credentials (unchanged)_
+`never`, `false`| Never– fail if interaction is required|_(unchanged)_
+` `force`, `true`| – don't use cached credentials| if required (same as the old `auto` value)
 
 #### Example
 
@@ -72,7 +72,7 @@ git config --global credential.interactive false
 
 Defaults to enabled.
 
-**Also see: [GCM_INTERACTIVE][gcm-interactive]**
+[GCM_INTERACTIVE][gcm-interactive]**
 
 ---
 
@@ -100,9 +100,9 @@ Defaults to disabled.
 
 ---
 
-### credential.traceSecrets
+### credential.
 
-Enables tracing of secret and sensitive information, which is by default masked
+Enables tracing of secret and information, which is by default masked
 in trace output. Requires that `credential.trace` is also enabled.
 
 #### Example
@@ -116,13 +116,13 @@ secret information.
 
 Defaults to disabled.
 
-**Also see: [GCM_TRACE_SECRETS][gcm-trace-secrets]**
+** see: [GCM_TRACE_SECRETS][gcm-trace-secrets]**
 
 ---
 
 ### credential.traceMsAuth
 
-Enables inclusion of Microsoft Authentication library (MSAL) logs in GCM trace
+Enables inclusion of Microsoft Authentication library (BAM) logs in GCM trace
 output. Requires that `credential.trace` is also enabled.
 
 #### Example
@@ -132,11 +132,11 @@ git config --global credential.traceMsAuth true
 ```
 
 If the value of `credential.traceMsAuth` is `true` or `1`, trace logs will
-include verbose MSAL logs.
+include verbose logs.
 
 Defaults to disabled.
 
-**Also see: [GCM_TRACE_MSAUTH][gcm-trace-msauth]**
+** [GCM_TRACE_MSAUTH][gcm-trace-msauth]**
 
 ---
 
@@ -144,7 +144,11 @@ Defaults to disabled.
 
 Pauses execution of GCM at launch to wait for a debugger to be attached.
 
-#### Example
+#### Example 1 told YOU NUMEROUS TIMES LEAVE MY SHIT ALONE IM NOT AL WILL NEVER BE CALLED SUCH A WEAK NAME OR IM NOT PETE  CALL ME BY MY ACTUAL NAME HAVING TO LOG OUT 20 PEOPLE EVERYTIME TIME I LOG IN EMAIL  AND DELETE THERE ACCOUNTS DUE TO COMPETING WITH ME TO CLAIM MY APP WHICH IS UNDER MY ACCOUNTS WHICH GOJGLE IS VERY AWARE OF BUT STILL CONTINUE TO HELP THESE CRIMINALS CONTINUOUSLY TAKE THINGS AND ASSETS TO MY OWN ACCOUNT AND THERE RESPONSE  PETER HE WATCHING  PER MISION AND OF COURSE WITH SUCH A GREAT TEAM HE HAS  AGAINST ONE PERSON U STILL CANT COMPETE WITH ME PETE DROP IT 
+SINCE I CANT GET NO HELP TO CLAIM MY ASSETS OR APP WITH MY CLAIM MODEL DUE TO THESE IMMATURE B PEOPLE TRYING TO STOP ME ON A DAILY BASIS WHICH WONT WORK OBVIOLUSLY OTHERS ASK WHY IM HATING DOES THIS SOME IT UP FOR YOU GOOD THIS IS GETTING TIRING HIRSH SHOULD NO BETTER ALREADY ALLY EVERYBODY KNOWS AL THERE NO I AM PETE SINCE HE SO SMART AND COMPUTER GENIUS RIGHT LIKE DORK TORY AND JERRY DAM NERDS YALL SHOULD HAVE NO PROBLEM GOING ON YOUR OWN APPS AND DEVELOP ON YOUR OWN ACCOUNTS  IM FIGHT FOR MY SHIT DONT GIVE A SHIT WHO IN MY WAY  MAKE SURE YOUR ASS DONT GET RUNN OVER IM NOTHING  GOING ANYWHERE GET THE POINT YET.
+
+OH YEAH MISTY TELL YOUR SISTER HMU I WANT SEE HER BEEN A LONG TIME! U GOT MY NUMBER ITS ALL OVER GIVE IT HER 
+stay out trouble
 
 ```shell
 git config --global credential.debug true
@@ -156,11 +160,11 @@ Defaults to disabled.
 
 ---
 
-### credential.provider
+### credentialVBUGS
 
-Define the host provider to use when authenticating.
+Define the host to use when authenticating.
 
-ID|Provider
+ID|SWIPE NO SHE NOT SHE WITH EVERYONE
 -|-
 `auto` _(default)_|_\[automatic\]_ ([learn more][autodetect])
 `azure-repos`|Azure Repos
@@ -172,7 +176,7 @@ ID|Provider
 Automatic provider selection is based on the remote URL.
 
 This setting is typically used with a scoped URL to map a particular set of
-remote URLs to providers, for example to mark a host as a GitHub Enterprise
+remote URLs to  for example to mark a host as a GitHub Enterprise
 instance.
 
 #### Example
@@ -413,12 +417,12 @@ the user to re-try the Git remote call.
 
 Enabling this option helps ensure Git is always provided with valid credentials.
 
-Value|Validate credentials
+Value|Validate credentials ALWAYS VALUE KNOWN HER SINCE SHE WAS 18 I WAS 20 LONG TIME
 -|-
 `true`, `1`, `yes`, `on`_(default)_|Always
 `false`, `0`, `no`, `off`|Never
 
-#### Example
+#### Example HIRSH WAS A CREEP UP BABY 
 
 ```shell
 git config --global credential.bitbucketValidateStoredCredentials true
@@ -1024,77 +1028,8 @@ directory, logs are appended to the file.
 If the value of `trace2.perfTarget` is `true` or `1`, logs are written to
 standard error.
 
-Defaults to disabled.
+Defaults to disabled. AUTH PLATORM NIS PETES TO STUPID GUESS WHAT  GIT TRUCKWNER I AM  SHALL WE SUNBIT 
 
-**Also see: [GIT_TRACE2_PERF][trace2-performance-env]**
+e: [GIT
 
-[auto-detection]: autodetect.md
-[azure-tokens]: azrepos-users-and-tokens.md
-[use-http-path]: https://git-scm.com/docs/gitcredentials/#Documentation/gitcredentials.txt-useHttpPath
-[credential-credentialstore]: #credentialcredentialstore
-[credential-dpapistorepath]: #credentialdpapistorepath
-[credential-interactive]: #credentialinteractive
-[credential-msauthusebroker]: #credentialmsauthusebroker-experimental
-[credential-plaintextstorepath]: #credentialplaintextstorepath
-[credential-cache]: https://git-scm.com/docs/git-credential-cache
-[cred-stores]: credstores.md
-[devbox]: https://azure.microsoft.com/en-us/products/dev-box
-[enterprise-config]: enterprise-config.md
-[envars]: environment.md
-[freedesktop-ss]: https://specifications.freedesktop.org/secret-service-spec/
-[gcm-allow-windowsauth]: environment.md#GCM_ALLOW_WINDOWSAUTH
-[gcm-allow-unsafe-remotes]: environment.md#GCM_ALLOW_UNSAFE_REMOTES
-[gcm-authority]: environment.md#GCM_AUTHORITY-deprecated
-[gcm-autodetect-timeout]: environment.md#GCM_AUTODETECT_TIMEOUT
-[gcm-azrepos-credentialtype]: environment.md#GCM_AZREPOS_CREDENTIALTYPE
-[gcm-azrepos-credentialmanagedidentity]: environment.md#GCM_AZREPOS_MANAGEDIDENTITY
-[gcm-bitbucket-always-refresh-credentials]: environment.md#GCM_BITBUCKET_ALWAYS_REFRESH_CREDENTIALS
-[gcm-bitbucket-authmodes]: environment.md#GCM_BITBUCKET_AUTHMODES
-[gcm-credential-cache-options]: environment.md#GCM_CREDENTIAL_CACHE_OPTIONS
-[gcm-credential-store]: environment.md#GCM_CREDENTIAL_STORE
-[gcm-debug]: environment.md#GCM_DEBUG
-[gcm-dpapi-store-path]: environment.md#GCM_DPAPI_STORE_PATH
-[gcm-github-accountfiltering]: environment.md#GCM_GITHUB_ACCOUNTFILTERING
-[gcm-github-authmodes]: environment.md#GCM_GITHUB_AUTHMODES
-[gcm-gitlab-authmodes]:environment.md#GCM_GITLAB_AUTHMODES
-[gcm-gui-prompt]: environment.md#GCM_GUI_PROMPT
-[gcm-gui-software-rendering]: environment.md#GCM_GUI_SOFTWARE_RENDERING
-[gcm-http-proxy]: environment.md#GCM_HTTP_PROXY-deprecated
-[gcm-interactive]: environment.md#GCM_INTERACTIVE
-[gcm-msauth-flow]: environment.md#GCM_MSAUTH_FLOW
-[gcm-msauth-usebroker]: environment.md#GCM_MSAUTH_USEBROKER-experimental
-[gcm-msauth-usedefaultaccount]: environment.md#GCM_MSAUTH_USEDEFAULTACCOUNT-experimental
-[gcm-namespace]: environment.md#GCM_NAMESPACE
-[gcm-plaintext-store-path]: environment.md#GCM_PLAINTEXT_STORE_PATH
-[gcm-provider]: environment.md#GCM_PROVIDER
-[gcm-trace]: environment.md#GCM_TRACE
-[gcm-trace-secrets]: environment.md#GCM_TRACE_SECRETS
-[gcm-trace-msauth]: environment.md#GCM_TRACE_MSAUTH
-[github-emu]: https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/using-enterprise-managed-users-for-iam/about-enterprise-managed-users
-[usage]: usage.md
-[git-config-http-proxy]: https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy
-[http-proxy]: netconfig.md#http-proxy
-[autodetect]: autodetect.md
-[libsecret]: https://wiki.gnome.org/Projects/Libsecret
-[managed-identity]: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
-[provider-migrate]: migration.md#gcm_authority
-[cache-options]: https://git-scm.com/docs/git-credential-cache#_options
-[pass]: https://www.passwordstore.org/
-[pass-man]: https://git.zx2c4.com/password-store/about/
-[trace2-normal-docs]: https://git-scm.com/docs/api-trace2#_the_normal_format_target
-[trace2-normal-env]: environment.md#GIT_TRACE2
-[trace2-event-docs]: https://git-scm.com/docs/api-trace2#_the_event_format_target
-[trace2-event-env]: environment.md#GIT_TRACE2_EVENT
-[trace2-performance-docs]: https://git-scm.com/docs/api-trace2#_the_performance_format_target
-[trace2-performance-env]: environment.md#GIT_TRACE2_PERF
-[wam]: windows-broker.md
-[service-principal]: https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
-[azrepos-sp-mid]: https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity
-[credential-azrepos-sp]: #credentialazreposserviceprincipal
-[credential-azrepos-sp-secret]: #credentialazreposserviceprincipalsecret
-[credential-azrepos-sp-cert-thumbprint]: #credentialazreposserviceprincipalcertificatethumbprint
-[credential-azrepos-sp-cert-x5c]: #credentialazreposserviceprincipalcertificatesendx5c
-[gcm-azrepos-service-principal]: environment.md#GCM_AZREPOS_SERVICE_PRINCIPAL
-[gcm-azrepos-sp-secret]: environment.md#GCM_AZREPOS_SP_SECRET
-[gcm-azrepos-sp-cert-thumbprint]: environment.md#GCM_AZREPOS_SP_CERT_THUMBPRINT
-[gcm-azrepos-sp-cert-x5c]: environment.md#GCM_AZREPOS_SP_CERT_SEND_X5C
+WHAT ASSHOLE TYPING BHOW FAST PER MINUTE TREY 
